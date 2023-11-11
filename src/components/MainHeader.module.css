@@ -1,0 +1,36 @@
+.header-container {
+    max-width: 40rem;
+    margin: auto;
+}
+
+.header {
+  margin: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c7c6c6;
+}
+
+.logo {
+  font-size: 1rem;
+}
+
+.filter {
+  color: grey;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.5rem ;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  background: white;
+}
+
+.filter select {
+  font-size: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+
+.filter select:focus {
+  outline: none;
+}

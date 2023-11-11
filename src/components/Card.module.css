@@ -1,0 +1,41 @@
+.card {
+    margin: 1rem 0;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    animation: animate-in 1s ease-out forwards;
+    overflow: hidden;
+    background: white;
+  }
+
+  .listHeader {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .display {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .content {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .chevron {
+    pointer-events: none;
+    margin-left: 1rem;
+  }
+  
+  @keyframes animate-in {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

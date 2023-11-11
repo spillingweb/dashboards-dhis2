@@ -1,0 +1,6 @@
+.cardslist {
+  list-style: none;
+  max-width: 40rem;
+  padding: 0 20px;
+  margin: auto;
+}

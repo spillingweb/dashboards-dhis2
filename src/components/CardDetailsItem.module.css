@@ -1,0 +1,9 @@
+.list-el {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.list-el p {
+    padding-right: 0.5rem;
+    display: inline;
+}
