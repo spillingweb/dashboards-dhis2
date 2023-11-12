@@ -25,7 +25,7 @@ function Card({i, onToggleChange, displayName, id, isActive, isFiltered}) {
 
     return (
         <li className={classes.card} style={{border: isActive ? "2px solid dodgerblue" : null}}>
-            <div className={classes.listHeader}  onClick={(e) => onToggleChange(i, e)}>
+            <div className={classes.listHeader} onClick={(e) => onToggleChange(i, e)}>
                 <h2 className={classes.display}>{displayName}</h2>
                 <div>
                     <i className={classes.star}>
