@@ -7,7 +7,7 @@ The app includes funcitonality for starring the different cards and saving the s
 
 The official DHIS2 UI library was not used for this project, all styles are made from basic CSS, in addition to some imported icons from the React Icons library. The default DHIS2 font Roboto was used.
 
-To avoid unnecessary re-rendering, I applied the "useEffect" hook from the React library, so that the data from the API only was fetched once.
+To avoid unnecessary re-rendering, I applied the "useEffect" hook from the React library, so that the data from the API only was fetched once, even though the components were rendered multiple times. I also included one automatic test script, but since the application does not have a lot of functionality, I relied mostly on manual testing.
 
 ## Deployed application
 https://spillingweb-dhis2-dashboards.netlify.app/

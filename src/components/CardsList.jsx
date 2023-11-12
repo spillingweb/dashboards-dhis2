@@ -27,6 +27,10 @@ function CardsList({isFiltered}) {
           activeCard === cardIndex ? setActiveCard('') : setActiveCard(cardIndex);  
         }
     }
+
+    let starredDashboardsArray = [];
+
+    localStorage.getItem('starredDashboards') && (starredDashboardsArray = JSON.parse(localStorage.starredDashboards));
     
     return (
         <>
@@ -35,6 +39,7 @@ function CardsList({isFiltered}) {
                     {cards.map((card, index) =>
                         <Card key={card.id}
                             id={card.id}
+                            starredArray={starredDashboardsArray} 
                             displayName={card.displayName}
                             onToggleChange={toggleActive}
                             isActive={activeCard === index}
