@@ -12,7 +12,7 @@ function App() {
 
     return (
         <>
-            <MainHeader isFiltered={filteredType} onFilter={filterTypeHandler} />
+            <MainHeader onFilter={filterTypeHandler} />
             <main>
                 <CardsList isFiltered={filteredType} />
             </main>

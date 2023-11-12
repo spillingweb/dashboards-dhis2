@@ -6,6 +6,7 @@ import CardDetails from './CardDetails';
 
 function Card({i, onToggleChange, displayName, id, isActive, isFiltered}) {
 
+    // Check for starred cards in local storage
     function checkLocalStar() {
         return localStorage.getItem(`star-${id}`);
     }

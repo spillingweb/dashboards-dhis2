@@ -12,7 +12,11 @@ function MainHeader({ onFilter}) {
         <div className={classes.filter}>
           <label htmlFor="types">Filter Items </label>
           <select name="types" onChange={onFilter}>
-            {typesArray.map((item) => (<option key={item} value={item.toUpperCase()}>{item}</option>))}
+            {typesArray.map((item) => (
+              <option key={item} value={item.toUpperCase()}>
+                {item}
+              </option>
+            ))}
           </select>
         </div>
       </header>

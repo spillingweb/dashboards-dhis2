@@ -8,6 +8,7 @@ function CardsList({isFiltered}) {
     const [isFetching, setIsFetching] = useState(false);
     const [activeCard, setActiveCard] = useState(0);
 
+    // Fetching dashboards from DHIS2 API
     useEffect(() => {
         async function fetchCards() {
             setIsFetching(true);
@@ -20,6 +21,7 @@ function CardsList({isFiltered}) {
         fetchCards();
     }, []);
 
+    // Setting and removing active card on click
     function toggleActive(cardIndex, e) {
         if (e.target.outerHTML.substring(1,5) != 'svg ' && e.target.outerHTML.substring(1,5) != 'path') {
           activeCard === cardIndex ? setActiveCard('') : setActiveCard(cardIndex);  
