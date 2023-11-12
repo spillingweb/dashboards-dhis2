@@ -28,6 +28,7 @@ function CardsList({isFiltered}) {
         }
     }
 
+    // Fetching starred dashboards from local storage
     let starredDashboardsArray = [];
 
     localStorage.getItem('starredDashboards') && (starredDashboardsArray = JSON.parse(localStorage.starredDashboards));

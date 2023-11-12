@@ -14,4 +14,4 @@ describe('Cards List component', () => {
     });
 
     // 
-});
+}); 
